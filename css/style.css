@@ -1,0 +1,92 @@
+/*------------------------
+    Reset
+-------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*------------------------
+    Debug
+-------------------------*/
+.debug header {
+    background-color: aquamarine;
+}
+.debug aside {
+    background-color: chocolate;
+}
+.debug .content {
+    background-color:bisque;
+}
+.debug footer {
+    background-color: yellowgreen;
+}
+.debug .logo {
+    background-color: black;
+}
+.debug .account {
+    background-color: blueviolet;
+}
+.debug .nav-aside {
+    background-color: cornflowerblue;
+}
+.debug .playlist {
+    background-color: darkgreen;
+}
+
+/*------------------------
+    Header
+-------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    z-index: 10;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*------------------------
+    Main
+-------------------------*/
+main {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+aside {
+    width: 300px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    height: 70px;
+    flex-shrink: 0;
+}
+.nav-aside {
+    flex-shrink: 0;
+}
+.playlist {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.account {
+    flex-shrink: 0;
+}
+
+.content {
+    width: calc(100% - 300px);
+    padding-top: 80px;
+    overflow-y: auto;
+}
+
+/*------------------------
+    Footer
+-------------------------*/
+footer {
+    height: 80px;
+}
